@@ -119,7 +119,8 @@ new Hiveplot.Chart({
 	<tr>
 		<td>axisConfig</td>
 		<td>is an array of objects. Each object defines how the nodes on the axis should be sorted. Each object has the following structure:
-			<br />{   axis:   name of the axis
+			<br />{   
+			<br />	  axis:   name of the axis
 			<br />    sort:   defines according to which criteria the nodes should be sorted.
 			<br />    order:  defines if the nodes should be ordered ascending or descending
 			<br />}
@@ -132,7 +133,8 @@ new Hiveplot.Chart({
 	<tr>
 		<td>nodes</td>
 		<td>defines a list of all nodes. If a list with nodes is passed it has to have the following structure:
-			<br />{   axis:   name of the axis on which the node lies
+			<br />{   
+			<br />	  axis:   name of the axis on which the node lies
 			<br />    label:  name of the node
 			<br />}
 			<br /><br />default: null
