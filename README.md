@@ -86,33 +86,33 @@ new Hiveplot.Chart({
 <table>
 	<tr>
 		<th>Attribute</th>
-		<th>Description></th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>tooltipElem</td>
 		<td>is the id of a 'div' where the tooltip should appear. If the tooltip should be movable or no tooltip should be shown, the element can remain empty
-			<br />default: null
-			<br />possible values: any valid id of a <div> or Null
+			<br /><br />default: null
+			<br />possible values: any valid id of a 'div' or null
 		</td>
 	</tr>
 	<tr>
 		<td>colorcode</td>
 		<td>defines if the nodes should be drawn in black-white or with colors
-			<br />default: 'black-white'
+			<br /><br />default: 'black-white'
 			<br />possible values: ['black-white', 'colored']
 		</td>
 	</tr>
 	<tr>
 		<td>nodesColorSchema</td>
 		<td>is a color which is used to generate a colorgradient based on this color
-			<br />default: 'blue'
+			<br /><br />default: 'blue'
 			<br />possible values: any valid color
 		</td>
 	</tr>
 	<tr>
 		<td>linksColorSchema</td>
 		<td>is an array of information about the colors which should be used to draw the links. The intensity of the links should change depending on the strength of the link. The array has the format [startColor, endColor, numberOfNuances]
-			<br />default: ['#FF0000', '#FFD700', 10]
+			<br /><br />default: ['#FF0000', '#FFD700', 10]
 			<br />possible values: any valid color and any valid number
 		</td>
 	</tr>
@@ -142,42 +142,42 @@ new Hiveplot.Chart({
 	<tr>
 		<td>tooltipSetting</td>
 		<td>defines if tooltips should be shown in case of a mouseoverevent
-			<br />default: static
+			<br /><br />default: 'static'
 			<br />possible values: ['none', 'movable', 'static']
 		</td>
 	</tr>
 	<tr>
 		<td>sortingTooltip</td>
 		<td>defines by which criteria the connections in the tooltip should be sorted
-			<br />default: 'source'
+			<br /><br />default: 'source'
 			<br />possible values: ['label', 'data']
 		</td>
 	</tr>
 	<tr>
 		<td>sortingOrderTooltip</td>
 		<td>defines if the nodes should be ordered ascending or descending
-			<br />default: true
+			<br /><br />default: true
 			<br />possible values [true, false] true means ascending, false means descending
 		</td>
 	</tr>
 	<tr>
 		<td>tooltipOrientation</td>
 		<td>defines if the text in the tooltip should be horizontal or vertical
-			<br />default: horizontal
+			<br /><br />default: 'horizontal'
 			<br />possible values: ['horizontal', 'vertical']
 		</td>
 	</tr>
 	<tr>
 		<td>onClickNode</td>
 		<td>defines a function which should be executed on a click event on a node
-			<br />default: null
+			<br /><br />default: null
 			<br />possible values: any function
 		</td>
 	</tr>
 	<tr>
 		<td>onClickLink</td>
 		<td>defines a function which should be executed on a click event on a link
-			<br />default: null
+			<br /><br />default: null
 			<br />possible values: any function
 		</td>
 	</tr>
