@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="hiveplot.css" />
+    <script src="hiveplot.js"></script>
+    <script src="vendor/d3/d3.min.js"></script>
+    <script src="vendor/jquery-1.11.1.js"></script>
+    <script src="vendor/randomColor/randomColor.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>HivePlot</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <label>From</label>
+            </td>
+            <td>
+                <label>To</label>
+            </td>
+            <td>
+                <label>Time</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Sort By</td>
+            <td>
+                <select id="axis1Sort">
+                    <option value="value">Value</option>
+                    <option value="numberOfLinks">Number Of Links</option>
+                    <option value="label">Label</option>
+                </select>
+            </td>
+            <td>
+                <select id="axis2Sort">
+                    <option value="value">Value</option>
+                    <option value="numberOfLinks">Number Of Links</option>
+                    <option value="label">Label</option>
+                </select>
+            </td>
+            <td>
+                <select id="axis3Sort">
+                    <option value="value">Value</option>
+                    <option value="numberOfLinks">Number Of Links</option>
+                    <option value="label">Label</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Order By</td>
+            <td>
+                <select id="axis1Order">
+                    <option value="true">ascending</option>
+                    <option value="false">descending</option>
+                </select>
+            </td>
+            <td>
+                <select id="axis2Order">
+                    <option value="true">ascending</option>
+                    <option value="false">descending</option>
+                </select>
+            </td>
+            <td>
+                <select id="axis3Order">
+                    <option value="true">ascending</option>
+                    <option value="false">descending</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Colorcode</td>
+            <td>Tooltip enabled?</td>
+            <td>Sorting Tooltip by</td>
+            <td>Ordering Tooltip by</td>
+            <td>Tooltip Format</td>
+        </tr>
+        <tr>
+            <td>
+                <select id="colorcode">
+                    <option value="black-white">black-white</option>
+                    <option value="colored">Colored</option>
+                </select>
+            </td>
+            <td>
+                <select id="tooltipSetting">
+                    <option value="none">None</option>
+                    <option value="movable">Movable</option>
+                    <option value="static">Right Side</option>
+                </select>
+            </td>
+            <td>
+                <select id="sortingTooltip">
+                    <option value="label">Alphabetically</option>
+                    <option value="data">Value</option>
+                </select>
+            </td>
+            <td>
+                <select id="sortingOrderTooltip">
+                    <option value="true">Ascending</option>
+                    <option value="false">Descending</option>
+                </select>
+            </td>
+            <td>
+                <select id="tooltipOrientation">
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button onclick="getValues()">Draw HivePlot</button>
+    <p></p>
+    x: From<br />    
+    y: To<br />
+    z: Time<br />
+    <div id="c1" style="float: left; width:700px; height: 700px; border:solid; border-color:black"></div>
+    <div id="tooltipDIV" style="float: right; width:300px; height: 700px"></div>
+    <script src="hiveplot_module.js"></script>    
+</body>
+</html>
