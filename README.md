@@ -55,7 +55,7 @@ new Hiveplot.Chart({
 });
 ```
 
-##Mandatory Attributes
+## Mandatory Attributes
 <table>
 	<tr>
 		<th>Attribute</th>
@@ -82,7 +82,7 @@ new Hiveplot.Chart({
 	</tr>
 </table>
 
-##Optional Attributes
+## Optional Attributes
 <table>
 	<tr>
 		<th>Attribute</th>
