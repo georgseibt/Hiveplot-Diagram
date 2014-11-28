@@ -142,6 +142,20 @@ new Hiveplot.Chart({
 		</td>
 	</tr>
 	<tr>
+		<td>linkMin</td>
+		<td>the links are colored between a color spectrum (linkColorSchema). linkMin defines the lower boundary of this spectrum. It is usually calculated in the library with the given data, but if you wish to define the lower limit manually, you can do so here.
+			<br /><br />default: value is calculated in the library from the given data
+            <br />possible values: any number
+		</td>
+	</tr>
+	<tr>
+		<td>linkMax</td>
+		<td>the links are colored between a color spectrum (linkColorSchema). linkMax defines the upper boundary of this spectrum. It is usually calculated in the library with the given data, but if you wish to define the upper limit manually, you can do so here.
+			<br /><br />default: value is calculated in the library from the given data
+            <br />possible values: any number
+		</td>
+	</tr>
+	<tr>
 		<td>tooltipSetting</td>
 		<td>defines if tooltips should be shown in case of a mouseoverevent
 			<br /><br />default: 'static'
